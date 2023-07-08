@@ -1,0 +1,34 @@
+.inicio {
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-inicio {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloco-inicio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+
+  height: 50vh;
+  color: #132235;
+  border-radius: 5px;
+}
+.estudante {
+  margin-left: 20%;
+  height: 500px;
+}
+.text-inicio {
+  width: 100px;
+}
