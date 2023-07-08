@@ -1,0 +1,52 @@
+.sobre {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloco-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 40px;
+  width: 50vw;
+  height: 60vh;
+  color: #132235;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bloco-card-sobre {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+.bloco-imagem-sobre {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 60vh;
+  width: 50vw;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #51dcee;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 4px #132235;
+  width: 200px;
+  height: 200px;
+  flex-wrap: wrap;
+}
+.text-card {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #132235;
+}
+.icon-card {
+  width: 24px;
+  height: 24px;
+}
