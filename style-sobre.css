@@ -1,32 +1,28 @@
 .sobre {
-  height: 65vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .bloco-sobre {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
-  font-size: 40px;
-  width: 50vw;
-  height: 60vh;
-  color: #132235;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  height: 100%;
+  width: 50%;
 }
 
 .bloco-card-sobre {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 30px 30px;
+  padding: 0 20px;
 }
 .bloco-imagem-sobre {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 60vh;
-  width: 50vw;
+  height: 100%;
+  width: 50%;
 }
 .card {
   display: flex;
@@ -37,9 +33,8 @@
   border-radius: 6px;
   padding: 10px;
   box-shadow: 0 2px 4px #132235;
-  width: 200px;
-  height: 200px;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 .text-card {
   font-size: 16px;
@@ -47,6 +42,43 @@
   color: #132235;
 }
 .icon-card {
-  width: 24px;
-  height: 24px;
+  width: 20%;
+  height: 20%;
+}
+@media screen and (max-width: 800px) {
+  .sobre {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .bloco-sobre {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bloco-card-sobre {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .bloco-imagem-sobre {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .text-card {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .icon-card {
+    width: 40px;
+    height: 40px;
+  }
 }

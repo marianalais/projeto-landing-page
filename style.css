@@ -3,13 +3,23 @@
   padding: 0;
   font-family: HelveticaNowDisplay, Arial, sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .palavra-colorida {
   color: #6cdad3;
 }
-
+.titulo {
+  font-size: 40px;
+  color: #132235;
+}
+.paragrafo {
+  font-size: 100%;
+  color: #132235;
+}
 footer {
   background-color: #132235;
+  font-size: 1rem;
   color: #ffffff;
   width: 100%;
   height: 8vh;
@@ -23,4 +33,18 @@ footer {
   width: 5%;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+  }
 }
