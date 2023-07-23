@@ -1,34 +1,97 @@
 .inicio {
-  height: 58vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .imagem-inicio {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  height: 100%;
 }
 
 .bloco-inicio {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 5%;
-
-  height: 50vh;
-  color: #132235;
-  border-radius: 5px;
+  height: 100%;
+  width: 50%;
+}
+.content-button-inicio {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .estudante {
-  margin-left: 20%;
-  height: 500px;
+  width: 100%;
 }
 .text-inicio {
-  width: 100px;
+  width: 50%;
+  font-size: 100%;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
+  .inicio {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imagem-inicio {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bloco-inicio {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .content-button-inicio {
+    height: auto;
+    margin-top: 2%;
+  }
+
+  .text-inicio {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  /* tablets */
+  .inicio {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imagem-inicio {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bloco-inicio {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .content-button-inicio {
+    height: auto;
+    margin-top: 2%;
+  }
+
+  .text-inicio {
+    width: 100%;
+    font-size: 14px;
+  }
 }
