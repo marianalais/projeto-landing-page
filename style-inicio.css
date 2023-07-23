@@ -65,7 +65,7 @@
     font-size: 14px;
   }
 }
-
+/* Planejamento-responsividade */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
   /* tablets */
   .inicio {
