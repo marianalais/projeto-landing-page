@@ -6,7 +6,6 @@ header {
   align-items: center;
   padding-right: 2%;
 }
-
 .logo {
   width: 15%;
 }
@@ -43,7 +42,6 @@ header {
   .menu {
     height: 100%;
   }
-
   .nav-menu {
     display: none;
     position: fixed;
@@ -58,9 +56,5 @@ header {
   .nav-menu.active {
     display: flex;
     flex-direction: column;
-  }
-  .nav-menu a.selected {
-    background-color: #ffffff;
-    color: #132235;
   }
 }

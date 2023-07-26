@@ -1,4 +1,5 @@
 .moradias {
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,13 +7,22 @@
 }
 .bloco-moradias {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  justify-content: space-between;
+  height: 70%;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 2%;
 }
-
+.bloco-texto-moradias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 30%;
+}
 .card-moradia {
   display: flex;
   flex-direction: column;
@@ -21,58 +31,61 @@
   border: 1px solid #13223574;
   border-radius: 6px;
   box-shadow: 0 4px 8px #13223574;
-  background-color: #ffffff;
   width: 18%;
-  padding-bottom: 1%;
+  height: 100%;
 }
 .foto-card {
   width: 100%;
-  height: 40%; /* Defina a altura desejada para a imagem */
+  height: 35%;
   object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
-.titulo-moradias {
-  width: 100%;
-  height: 15%;
-  font-size: 35px;
-  margin: 1% 0;
-  text-align: center;
-  color: #132235;
+.texto-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
 }
-.paragrafo-card-moradia {
-  font-size: 100%;
-}
-.text-card-moradias {
+.sinopse-moradias {
   font-size: 80%;
   color: #616b77;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
+  .bloco-texto-moradias {
+    height: 20%;
+  }
   .bloco-moradias {
+    width: 100%;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
   }
-
   .card-moradia {
-    flex: 0 0 auto;
     scroll-snap-align: start;
-    width: 45%;
-    margin: 0 2% 20px;
+    width: 55%;
+    margin: 0 3%;
+    height: 100%;
   }
-
-  .titulo-moradias {
-    font-size: 24px;
-    margin: 10px 0;
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  /* tablets */
+  .bloco-texto-moradias {
+    height: 20%;
   }
-
-  .foto-card {
-    height: 200px;
+  .bloco-moradias {
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
-
-  .text-card-moradias {
-    font-size: 12px;
+  .card-moradia {
+    scroll-snap-align: start;
+    width: 55%;
+    margin: 0 3%;
+    height: 100%;
   }
 }
