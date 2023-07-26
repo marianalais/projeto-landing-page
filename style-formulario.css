@@ -2,10 +2,8 @@
   height: 70vh;
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -20,7 +18,7 @@
   height: 90%;
 }
 .titulo-formulario {
-  font-size: 100%;
+  font-size: 2rem;
   margin-top: 5%;
   text-align: center;
   color: #132235;
@@ -42,14 +40,32 @@ label {
   margin-top: 3%;
   color: #132235;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
   .conteiner-formulario {
     height: auto;
     padding: 20px;
   }
-
   .formulario {
     width: 100%;
     height: auto;
+  }
+  .titulo-formulario {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  /* tablets */
+  .conteiner-formulario {
+    height: auto;
+    padding: 20px;
+  }
+  .formulario {
+    width: 100%;
+    height: auto;
+  }
+  .titulo-formulario {
+    font-size: 1.3rem;
   }
 }
