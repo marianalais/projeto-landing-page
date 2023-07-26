@@ -14,15 +14,19 @@
   height: 100%;
   width: 50%;
 }
-
+.bloco-texto-sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  width: 100%;
+  font-size: 1rem;
+}
 .bloco-card-sobre {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-}
-.bloco-imagem-sobre {
-  height: 100%;
-  width: 50%;
+  padding: 0 5%;
 }
 .card {
   display: flex;
@@ -31,54 +35,88 @@
   justify-content: center;
   border: 1px solid #51dcee;
   border-radius: 6px;
-  padding: 10px;
+  padding: 1%;
   box-shadow: 0 2px 4px #132235;
   width: 100%;
   height: 100%;
 }
 .text-card {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 2%;
   color: #132235;
 }
 .icon-card {
-  width: 20%;
+  width: 40%;
   height: 20%;
 }
-@media screen and (max-width: 800px) {
+.bloco-imagem-sobre {
+  height: 100%;
+  width: 50%;
+}
+.imagem-sobre {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
   .sobre {
-    flex-direction: column;
     height: auto;
-    padding: 20px;
+    margin-bottom: 5%;
   }
-
   .bloco-sobre {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
-
+  .bloco-texto-sobre {
+    font-size: 1rem;
+    padding-bottom: 2%;
+    height: 30vh;
+  }
   .bloco-card-sobre {
     flex-direction: column;
-    padding: 0;
+    padding: 0 5%;
   }
-
   .bloco-imagem-sobre {
     width: 100%;
     height: auto;
   }
-
   .card {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
-
-  .text-card {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-
   .icon-card {
-    width: 40px;
-    height: 40px;
+    width: 10%;
+    height: 20%;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  /* tablets */
+  .sobre {
+    height: auto;
+  }
+  .bloco-sobre {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  .bloco-texto-sobre {
+    font-size: 1rem;
+    padding-bottom: 2%;
+    height: 25vh;
+  }
+  .bloco-card-sobre {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+  .bloco-imagem-sobre {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    margin-bottom: 5%;
+  }
+  .icon-card {
+    width: 10%;
+    height: 20%;
   }
 }
